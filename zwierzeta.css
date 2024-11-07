@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: url(../img/tlo.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    top: 0;
+    width: 100%;
+    background-color: rgba(32, 179, 3, 0.733);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    z-index: 1;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around; 
+}
+li > a{
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  position: relative;
+  padding: .1em;
+  color: #000000;
+  width: 100%;
+}
+section{
+    background-color: rgba(206, 255, 206, 0.76);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    color: black;
+    margin-bottom: 5%;
+    display: flex;
+}
+img{
+    width: 60%;
+    height: 25%;
+    margin: 30px;
+    padding: 15px;
+}
+body{
+    overflow-x: hidden;
+}
+article{
+    width: 49%;
+    margin-top: 100px;
+}
+p{
+    padding: 10px;
+}
+h1{
+    margin-left: 33%;
+    position: absolute;
+    font-size: 3rem;
+}
+@media only screen and (max-width: 660px) {
+   section{
+       display: flex;
+       flex-direction: column;
+   }
+   article{
+       width: 100%;
+   }
+   a{
+       font-size: 1;
+   }
+}
